@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Project task</title>
+    <meta charset="utf-8">
+    <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div>
+            <a href="register" class="tab-nav" id="register">Register</a>
+        </div>
+        <div class="tab-nav">
+            <a href="whoAreWe" class="tab-nav" id="whoAreWe">Who are we?</a>
+        </div>
+        <div class="tab-nav">
+            <a href="careers" class="tab-nav" id="careers">Careers</a>
+        </div>
+    </div>
+    <div class="hover-content">
+        <div class="display" id="display-register">
+            Create account with us you will be needed to provide a valid email address and other details
+        </div>
+        <div class="display" id="display-whoarewe">
+            We are well reputed company handling the all the functions and maintainance of the company and the needs of the clients.
+        </div>
+        <div class="display" id="display-careers">
+            We provide a wide range of opputunites in and abroad. If you are intrested in joining with us please provide us the resume
+            and other qualifications
+        </div>
+    </div>
+    <div class="bottom-container">
+        <div id="register-tab" class="hide-div">
+         
+			<!-- ****************form started here ************-->
+			<div class="form-main-div">
+				<form class="horizontal" action="#" method="post">
+					<div class="form-element">
+						<div class="left-label">
+							<label for="txtFirstName">First name</label>
+						</div>
+						<div class="form-control">
+							<input type="text" name="firstName" id="txtFirstName" maxlength="35">
+						</div>
+					</div>
+					<div class="form-element">
+						<div class="left-label">
+							<label for="txtLastName">Last name</label>
+						</div>
+						<div class="form-control">
+							<input type="text" name="lastName" id="txtLastName" maxlength="35">
+						</div>
+					</div>
+					<div class="form-element">
+						<div class="left-label">
+							<label for="txtMiddleName">Middle name</label>
+						</div>
+						<div class="form-control">
+							<input type="text" name="middleName" id="txtMiddleName" maxlength="35">
+						</div>
+					</div>
+					<div class="form-element">
+						<div class="left-label">
+							<label>Gender</label>
+						</div>
+						<div class="form-control" id="radio">
+							<label class="inline-labels">
+								<input id="rdoMale" type="radio" name="gender" value="male"> Male
+							</label>
+							<label class="inline-labels">
+								<input id="rdoFemale" type="radio" name="gender" value="female"> Female
+							</label>
+
+						</div>
+					</div>
+					<div class="form-element">
+						<div class="left-label">
+							<label for="txtEmail">Email</label>
+						</div>
+						<div class="form-control">
+							<input type="text" name="email" id="txtEmail" maxlength="35">
+						</div>
+					</div>
+					<div class="form-element">
+						<div class="left-label">
+							<label for="txtCompany">Company</label>
+						</div>
+						<div class="form-control">
+							<input type="text" name="company" id="txtCompany" maxlength="35">
+						</div>
+					</div>
+					<div class="form-element">
+						<div class="left-label">
+							<label for="ddlDesignation">Designation</label>
+						</div>
+						<!-- select multiple to make it allow you to select multiple values -->
+						<div class="form-control">
+							<select id="ddlDesignation" name="designation">
+								<option value="-1">Please select your designation</option>
+
+								<option value="hr">HR</option>
+								<option value="teamleader">Team leader</option>
+								<option value="trainee">Trainee</option>
+								<option value="admin">Administrator</option>
+								<option value="techsupport">Technical support</option>
+								<option value="sales">Sales executive</option>
+
+							</select>
+						</div>
+					</div>
+
+					<div class="form-element">
+						<div class="left-label">
+							<label for="ddlCountry">Country</label>
+						</div>
+						<!-- select multiple to make it allow you to select multiple values -->
+						<div class="form-control">
+							<select id="ddlCountry" name="country">
+								<option value="-1">Please select a country...</option>
+
+								<option value="india">India</option>
+								<option value="australia">Australia</option>
+								<option value="england">England</option>
+								<option value="us">US</option>
+								<option value="canada">Canada</option>
+								<option value="pakistan">Pakistan</option>
+
+							</select>
+						</div>
+					</div>
+
+					<div class="form-element">
+						<div class="left-label">
+							<label for="ddlCity">City</label>
+						</div>
+						<!-- select multiple to make it allow you to select multiple values -->
+						<div class="form-control">
+							<select id="ddlCity" name="state">
+								<option value="-1">Please select a country...</option>
+
+								<option value="india">India</option>
+								<option value="australia">Australia</option>
+								<option value="england">England</option>
+								<option value="us">US</option>
+								<option value="canada">Canada</option>
+								<option value="pakistan">Pakistan</option>
+
+							</select>
+						</div>
+					</div>
+					<div class="form-element">
+						<div class="left-label">
+							<label for="txtDob">Date of birth[DD-MM-YYYY]</label>
+						</div>
+						<div class="form-control">
+							<input type="text" name="email" id="txtDob" maxlength="10">
+						</div>
+					</div>
+
+
+					<div class="form-element">
+						<div class="left-label">
+							<label for="flPicture">Picture</label>
+						</div>
+						<div class="form-control">
+							<input type="file" id="flPicture" name="picture">
+						</div>
+					</div>
+					<div class="form-element">
+						<div class="left-label"></div>
+						<div class="form-control">
+							<label class="declare">
+								<input id="checkDeclare" type="checkbox" name="declare" value="English"> Here by I declare that above provided information is true.
+							</label>
+						</div>
+					</div>
+					<div class="btn-container">
+						<input type="submit" value="Register!" id="submitBtn"class="btn">
+						<input type="reset" value="Clear" class="btn">
+					</div>
+				</form>
+			</div>
+		</div>  
+		<!-- *****************form ended****************** -->
+        </div>
+        <div id="who-are-we-tab" class="hide-div">
+            <h3> Who are we?</h3>
+        </div>
+
+        <div id="careers-tab" class="hide-div">
+            <h2>Our Team</h2>
+            <div class="left-container">
+                
+                <div class="arrow-div"><img class="img-arrow" src="img/arrow.png"alt="arrow image"></div>
+                <div class="sub-left-container" id="topDiv"><img src="img/ceo.jpg"><div class="img-description"><span>Mr.Aroop Raha</span></div></div>
+               
+                <div class="sub-left-container" id="middleDiv"><img src="img/cto.png"><div class="img-description"><span>Mr.Rahman</span></div></div>
+             
+                <div class="sub-left-container" id="bottomDiv"><img src="img/cco.png"><div class="img-description"><span>Mr.Modi</span></div></div>
+                
+            </div>
+            <div class="right-container">
+              
+                <div id="topDivDetails" class="rightText">
+                    <h3>CEO</h3><p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+                    in some form, by injected humour, or randomised words which don't look even slightly believable. If you
+                    are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden
+                    in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks
+                    as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200
+                    Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks
+                    reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic
+                    words etc.</p></div>
+                <div id="middleDivDetails" class="ipText rightText">
+                    <h3>CTO</h3> <p>many of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
+                    injected humour, or randomised words which don't look even slightly believable. If you are going to use
+                    a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle
+                    of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,
+                    making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined
+                    with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated
+                    Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p></div>
+                <div id="bottomDivDetails" class="ipText rightText">
+                    <h3>COO</h3><p> variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,
+                    by injected humour, or randomised words which don't look even slightly believable. If you are going to
+                    use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle
+                    of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,
+                    making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined
+                    with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated
+                    Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</P></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

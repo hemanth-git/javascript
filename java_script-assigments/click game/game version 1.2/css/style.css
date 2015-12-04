@@ -1,0 +1,180 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/**
+END OF CSS RESETER
+**/
+body{
+	width: 970px;
+	border: 1px solid #dedede;
+	box-shadow: 0px 0px 10px 0px #dedede;
+	margin: auto;
+}
+.header{
+	height: 50px;
+	border: 2px solid #000000;
+}
+.game-container{
+	display: none;
+	margin: auto;	
+	cursor: crosshair;
+	border: 2px solid #000000;
+}
+.score{
+	font-size: 1.5em;
+	margin-top: 10px;
+	margin-left: 40px;
+	background-color: #e5a470;
+	padding: 5px;
+	float: left;
+}
+
+.timer-div{
+	float: right;
+	margin-right: 50px;
+	font-size: 1.5em;
+	margin-top: 10px;
+	background-color: #e5a470;
+}
+.game-over{
+	
+	margin-top: 300px;
+	text-align: center;
+	font-size: 2.2em;
+	padding: 5px;
+}
+.red-class{
+	background-color:#c90202;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	
+}
+.violet-class{
+	background-color:#504ba5;
+	width:18px;
+	height:18px;
+	position: absolute;
+	
+}
+.yellow-class{
+	background-color:#fef200;
+	width:14px;
+	height:14px;
+	position: absolute;
+
+}
+.green-class{
+	background-color:#06a956;
+	width:16px;
+	height:16px;
+	position: absolute;
+	
+}
+.blue-class{
+	background-color:#0310bd;
+	width:18px;
+	height:18px;
+	position: absolute;
+
+}
+fieldset{
+	border: 1px solid #000000;
+	border-radius: 5px;
+	padding: 10px;
+}
+.form-main-div{
+	box-shadow: 0px 0px 10px 0px #dedede;
+	width: 560px;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.form-control{		
+	display: inline-block;
+}
+.left-label{
+	display: inline-block;
+	text-align: right;
+	width: 250px;
+}
+.form-control input[type="text"],.form-control select, .form-control textarea{
+	width: 200px;
+}
+.form-element .inline-labels{
+	width: 100px;
+}
+.btn-container{
+	text-align: center;
+}
+.form-control{
+	width: 280px;
+}
+.form-element,.btn-container{
+	margin-top: 20px;
+}
+.btn{
+	width: 70px;
+	height: 25px;
+	background-color: #e5a470;
+}
+.left-label label{
+	margin-right: 40px;
+}
+.easy{
+	width: 600px;
+	height: 480px;
+}
+.medium{
+	width: 800px;
+	height: 600px;
+}
+.hard{
+	width: 1024px;
+	height: 768px;
+}

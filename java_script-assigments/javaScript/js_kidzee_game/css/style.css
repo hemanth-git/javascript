@@ -1,0 +1,118 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/**
+END OF CSS RESETER
+**/
+body{
+	width: 970px;
+	border: 1px solid #dedede;
+	box-shadow: 0px 0px 10px 0px #dedede;
+	margin: auto;
+	
+}
+.header{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 2.3em;
+	border: 2px solid #000000;
+	border-radius: 5px;
+	padding:10px;
+}
+.footer{
+	border: 2px solid #000000;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 1.3em;
+	border-radius: 5px;
+	height: 50px;
+}
+li,.questions{
+	display: inline-block;
+}
+
+li{
+	padding: 20px;
+}
+.questions{
+	color:#ff0000;
+	margin-left:20px;
+}
+img{
+	width: 130px;
+	height: 130px;
+	display: inline-block;
+	border: 2px solid #000000;
+}
+.questions, span,.score{
+	font-size: 2.2em;
+}
+.score{
+	background-color: #d1b2b2;
+}
+.main-container{
+	clear: both;
+	text-align: center;
+}
+.retake img{
+	width: 50px;
+	height: 50px;
+}
+
+.retake{
+	margin-top: 10px;
+	float: right;
+	margin-right: 40px;
+	cursor: pointer;
+}
+.score{
+	float: left;
+	margin-left: 40px;
+}
